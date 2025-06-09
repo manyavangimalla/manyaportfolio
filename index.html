@@ -149,10 +149,10 @@
         }
 
         .hero-text p {
-            font-size: 1.2rem;
-            margin-bottom: 30px;
-            max-width: 600px;
+        font-size: 1.1rem;
+        line-height: 1.6;
         }
+
 
         .hero-image {
             flex: 1;
@@ -812,27 +812,24 @@
         <a href="#education">Education</a>
         <a href="#contact">Contact</a>
     </div>
-
-    <!-- Hero Section -->
-    <section id="hero">
-        <div class="container">
-            <div class="hero-content">
-                <div class="hero-text animate">
-                    <h1>Hello, I'm <span>Manya Shree</span></h1>
-                    <p>A passionate Software Engineer with expertise in full-stack development, cloud technologies, and parallel computing. Currently pursuing my Master's in Computer Science at California State University, Sacramento.</p>
-                    <div class="hero-cta">
-                        <a href="#contact" class="btn">Get In Touch</a>
-                        <a href="#projects" class="btn btn-outline">View My Work</a>
-                    </div>
-                </div>
-                <div class="hero-image animate">
-                    <div style="background-color: var(--secondary-color); height: 400px; width: 100%; border-radius: 10px; display: flex; align-items: center; justify-content: center;">
-                        <i class="fas fa-user" style="font-size: 150px; color: var(--primary-color);"></i>
-                    </div>
+<!-- Hero Section -->
+<section id="hero">
+    <div class="container">
+        <div class="hero-content">
+            <div class="hero-text animate">
+                <h1>Hello, I'm <span>Manya Shree</span></h1>
+                <p>I am a graduate student at California State University, Sacramento, pursuing a Master of Science in Computer Science. I am passionate about full-stack development, cloud technologies, and parallel computing. My academic interests include distributed systems, artificial intelligence, and software architecture.Currently, I am working as a SPHERE Intern at the University of Southern California, where I develop parallel algorithms, containerized applications, and scalable infrastructure tools. I also served as a Graduate Teaching Assistant at California State University, Sacramento, supporting courses in system interfacing and parallel processing.Previously, I worked as a Software Engineer at Nagarro, where I developed enterprise-grade solutions using Python, Go, and TypeScript for banking and financial clients. My work included implementing real-time systems and automating loan processing workflows. I have also contributed to research in GAN-based medical diagnostics and real-time communication platforms.</p>
+                <div class="hero-cta">
+                    <a href="#contact" class="btn">Get In Touch</a>
+                    <a href="#projects" class="btn btn-outline">View My Work</a>
                 </div>
             </div>
+            <div class="hero-image animate">
+                <img src="manya.jpg" alt="Manya Shree" style="height: 400px; width: 100%; object-fit: cover; border-radius: 10px;" />
+            </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- About Section -->
     <section id="about">
@@ -963,68 +960,75 @@
         </div>
     </section>
 
-    <!-- Projects Section -->
     <section id="projects">
-        <div class="container">
-            <h2 class="section-title">Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card animate">
-                    <div class="project-image">
-                        <i class="fas fa-microscope"></i>
-                    </div>
-                    <div class="project-info">
-                        <h3>PCOS Detection using GANs</h3>
-                        <p>Developed a deep learning model using Generative Adversarial Networks to generate synthetic medical imaging data for Polycystic Ovary Syndrome detection with Few-Shot Learning techniques.</p>
-                        <div class="project-tech">
-                            <span>Python</span>
-                            <span>TensorFlow</span>
-                            <span>GANs</span>
-                            <span>ML</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="btn btn-outline">View Project</a>
-                        </div>
-                    </div>
+    <div class="container">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-grid">
+
+            <!-- Project 1 -->
+            <div class="project-card animate">
+                <div class="project-image">
+                    <img src="pcos.png" alt="PCOS Detection" style="width: 100px; height: auto;" />
                 </div>
-                <div class="project-card animate">
-                    <div class="project-image">
-                        <i class="fas fa-comments"></i>
+                <div class="project-info">
+                    <h3>PCOS Detection using GANs</h3>
+                    <p>Developed a deep learning model using Generative Adversarial Networks to generate synthetic medical imaging data for Polycystic Ovary Syndrome detection with Few-Shot Learning techniques.</p>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>TensorFlow</span>
+                        <span>GANs</span>
+                        <span>ML</span>
                     </div>
-                    <div class="project-info">
-                        <h3>Real-Time Chat Application</h3>
-                        <p>Developed a real-time chat application using WebSockets and Socket.io for instant messaging between clients and servers with features like group chats and user authentication.</p>
-                        <div class="project-tech">
-                            <span>Node.js</span>
-                            <span>React</span>
-                            <span>Socket.io</span>
-                            <span>AWS</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="btn btn-outline">View Project</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card animate">
-                    <div class="project-image">
-                        <i class="fas fa-server"></i>
-                    </div>
-                    <div class="project-info">
-                        <h3>Container Orchestration System</h3>
-                        <p>Built a simplified container orchestration system using Docker and Kubernetes to automate deployment, scaling, and management of containerized applications.</p>
-                        <div class="project-tech">
-                            <span>Docker</span>
-                            <span>Kubernetes</span>
-                            <span>Go</span>
-                            <span>Python</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="btn btn-outline">View Project</a>
-                        </div>
+                    <div class="project-links">
+                        <a href="#" class="btn btn-outline">View Project</a>
                     </div>
                 </div>
             </div>
+
+            <!-- Project 2 -->
+            <div class="project-card animate">
+                <div class="project-image">
+                    <img src="chat.png" alt="Chat App" style="width: 100px; height: auto;" />
+                </div>
+                <div class="project-info">
+                    <h3>Real-Time Chat Application</h3>
+                    <p>Developed a real-time chat application using WebSockets and Socket.io for instant messaging between clients and servers with features like group chats and user authentication.</p>
+                    <div class="project-tech">
+                        <span>Node.js</span>
+                        <span>React</span>
+                        <span>Socket.io</span>
+                        <span>AWS</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="btn btn-outline">View Project</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-card animate">
+                <div class="project-image">
+                    <img src="orchestration.png" alt="Orchestration System" style="width: 100px; height: auto;" />
+                </div>
+                <div class="project-info">
+                    <h3>Container Orchestration System</h3>
+                    <p>Built a simplified container orchestration system using Docker and Kubernetes to automate deployment, scaling, and management of containerized applications.</p>
+                    <div class="project-tech">
+                        <span>Docker</span>
+                        <span>Kubernetes</span>
+                        <span>Go</span>
+                        <span>Python</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="btn btn-outline">View Project</a>
+                    </div>
+                </div>
+            </div>
+
         </div>
-    </section>
+    </div>
+</section>
+
 
     <!-- Education Section -->
     <section id="education">
